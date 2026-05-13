@@ -1,12 +1,14 @@
 def fibonacci(n):
     if n == 0 or n == 1:
         return n
+    
     return fibonacci(n - 1) + fibonacci(n - 2)
 
 def gcd(a, b):
     if b == 0:
         return a
     r = a % b
+
     return gcd(b, r)
 
 def compareTo(s1, s2):
