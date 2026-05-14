@@ -14,13 +14,13 @@ def gcd(a, b):
 def compareTo(s1, s2):
     if s1 == "" and s2 == "":
         return 0
-    elif s1 == "":
+    if s1 == "":
         return -1
-    elif s2 == "":
+    if s2 == "":
         return 1
-    elif s1[0] < s2[0]:
+    if s1[0] < s2[0]:
         return -1
-    elif s1[0] > s2[0]:
+    if s1[0] > s2[0]:
         return 1
 
     return compareTo(s1[1:], s2[1:])
